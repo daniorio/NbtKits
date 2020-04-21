@@ -1,0 +1,9 @@
+name: Kits
+description: By LuxinfineTeam
+main: ml.luxinfine.kits
+version: 1.0
+website: https://team.luxinfine.ml/
+authors: [daniorio]
+commands:
+    kit:
+    kits:

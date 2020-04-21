@@ -1,0 +1,41 @@
+plugins {
+	id "ru.endlesscode.bukkitgradle" version "0.8.2"
+}
+
+dependencies {
+	compileOnly bukkit()
+}
+
+apply plugin: "ru.endlesscode.bukkitgradle"
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+version = "1.0"
+group= "ml.luxinfine"
+archivesBaseName = "kits"
+
+repositories {
+	flatDir {
+		dirs 'lib'
+	}
+}
+
+dependencies {
+	compile name: 'craftbukkit-1.7.10-R0.1-20140808.005431-8'
+}
+
+
+bukkit {
+	version = "1.7.10"
+
+	meta {
+		name = "Kits"
+		description = "By LuxinfineTeam"
+		main = "ml.luxinfine.kits"
+		version = "1.0"
+		url = "https://team.luxinfine.ml/"
+		authors = ["daniorio"]
+	}
+}
